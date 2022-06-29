@@ -1,0 +1,94 @@
+@import url(_variaveis.css);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.confetes div {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    transform-origin: left top;
+    animation: efeito-folha-caindo 5s ease-in-out -2s infinite;
+}
+
+.confete-um {
+    left: 15%;
+    background: red;
+    animation-delay: -5s !important;
+}
+
+.confete-dois {
+    left: 30%;
+    background: yellow;
+    animation-delay: -3s !important;
+}
+
+.confete-tres {
+    left: 55%;
+    background: green;
+    animation-delay: -4s !important;
+}
+
+.confete-quatro {
+    left: 70%;
+    background: blue;
+    animation-delay: -2.5s !important;
+}
+
+.confete-cinco {
+    left: 90%;
+    background: purple;
+    animation-delay: -1s !important;
+}
+
+@keyframes efeito-folha-caindo {
+    0% {
+        transform: rotate(15deg) rotateY(0deg) translate(0);
+    }
+    25% {
+        transform: rotate(5deg) rotateY(1turn) translate(-5vw, 20vh);
+    }
+    50% {
+        transform: rotate(15deg) rotateY(2turn) translate(5vw, 60vh);
+    }
+    75% {
+        transform: rotate(5deg) rotateY(3turn) translate(-10vw, 80vh);
+    }
+    100% {
+        transform: rotate(15deg) rotateY(4turn) translate(10vw, 110vh);
+    }
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-parabens {
+    color: aliceblue;
+    font-size: 32px;
+}
+
+#imagem {
+    padding-top: 24px;
+    width: 500px;
+}
+
+.imagem-aniversario {
+    width: 100%;
+    border-radius: 16px;
+}
+
+@media screen and (min-width: 425px) {}

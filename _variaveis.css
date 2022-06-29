@@ -1,0 +1,9 @@
+:root {
+    --fundo-card: #E65E51;
+    --largura_card: 150px;
+    --titulo: #E6D267;
+    --size-titulo: 24px;
+    --subtitulo: #E6D267;
+    --size-subtitulo: 16px;
+    --imagem1: url(/img/1.png);
+}
