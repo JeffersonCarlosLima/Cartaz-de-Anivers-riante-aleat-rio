@@ -95,17 +95,28 @@ body {
 
 #imagem {
     padding-top: 24px;
-    width: 500px;
 }
 
 img {
-    width: 100%;
     border-radius: 16px;
 }
 
 @media screen and (min-width: 425px) {
-    .img {
+    img {
+        width: 425px;
+    }
+    #imagem {
         width: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width: auto;
     }
     #imagem {
         width: 100%;
