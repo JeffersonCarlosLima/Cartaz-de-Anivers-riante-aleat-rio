@@ -48,6 +48,18 @@ body {
     animation-delay: -1s !important;
 }
 
+.confete-seis {
+    left: 60%;
+    background: rgb(255, 54, 101);
+    animation-delay: -1.5s !important;
+}
+
+.confete-sete {
+    left: 30%;
+    background: rgb(255, 181, 54);
+    animation-delay: -1.3s !important;
+}
+
 @keyframes efeito-folha-caindo {
     0% {
         transform: rotate(15deg) rotateY(0deg) translate(0);
@@ -86,9 +98,16 @@ body {
     width: 500px;
 }
 
-.imagem-aniversario {
+img {
     width: 100%;
     border-radius: 16px;
 }
 
-@media screen and (min-width: 425px) {}
+@media screen and (min-width: 425px) {
+    .img {
+        width: 100%;
+    }
+    #imagem {
+        width: 100%;
+    }
+}
