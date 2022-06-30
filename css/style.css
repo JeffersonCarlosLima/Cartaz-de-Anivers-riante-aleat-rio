@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.confetes div {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    transform-origin: left top;
+    animation: efeito-folha-caindo 5s ease-in-out -2s infinite;
+}
+
+.confete-um {
+    left: 15%;
+    background: red;
+    animation-delay: -5s !important;
+}
+
+.confete-dois {
+    left: 30%;
+    background: yellow;
+    animation-delay: -3s !important;
+}
+
+.confete-tres {
+    left: 55%;
+    background: green;
+    animation-delay: -4s !important;
+}
+
+.confete-quatro {
+    left: 70%;
+    background: blue;
+    animation-delay: -2.5s !important;
+}
+
+.confete-cinco {
+    left: 90%;
+    background: purple;
+    animation-delay: -1s !important;
+}
+
+.confete-seis {
+    left: 60%;
+    background: rgb(255, 54, 101);
+    animation-delay: -1.5s !important;
+}
+
+.confete-sete {
+    left: 30%;
+    background: rgb(255, 181, 54);
+    animation-delay: -1.3s !important;
+}
+
+@keyframes efeito-folha-caindo {
+    0% {
+        transform: rotate(15deg) rotateY(0deg) translate(0);
+    }
+    25% {
+        transform: rotate(5deg) rotateY(1turn) translate(-5vw, 20vh);
+    }
+    50% {
+        transform: rotate(15deg) rotateY(2turn) translate(5vw, 60vh);
+    }
+    75% {
+        transform: rotate(5deg) rotateY(3turn) translate(-10vw, 80vh);
+    }
+    100% {
+        transform: rotate(15deg) rotateY(4turn) translate(10vw, 110vh);
+    }
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-parabens {
+    color: aliceblue;
+    font-size: 32px;
+}
+
+img {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+@media screen and (min-width: 425px) {
+    img {
+        width: 400px;
+    }
+    #imagem {
+        width: 80%;
+    }
+    .container {
+        width: 100%;
+        height: 600px;
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width: 600px;
+    }
+    #imagem {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 100vh;
+        padding: 32px;
+    }
+}
